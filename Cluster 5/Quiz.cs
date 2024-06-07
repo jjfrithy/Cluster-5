@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Cluster_5
 {
-    public partial class Form1 : Form
+    public partial class Quiz : Form
     {
-        public Form1()
+        List<Player> scores = new List<Player>();
+
+        public Quiz(List<Player> tempScore)
         {
             InitializeComponent();
+
+            scores = tempScore;
         }
     }
 }

@@ -14,9 +14,12 @@ namespace Cluster_5
         [STAThread]
         static void Main()
         {
+             List<Player> scores = new List<Player>();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu(scores));
+
+           
         }
     }
 }
